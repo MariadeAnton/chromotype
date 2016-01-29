@@ -20,7 +20,7 @@ env:
 
 before_script:
   - sudo apt-get install graphicsmagick -y
-  - mysql -e 'create database chromotype_test'
+  - mysql -u root -e 'create database chromotype_test'
   - psql -c 'create database chromotype_test' -U postgres
 
 script:
